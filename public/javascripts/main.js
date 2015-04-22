@@ -1,4 +1,3 @@
-console.log('hello world'); 
 
 var ProductCatalog = React.createClass({
 	render: function() {
