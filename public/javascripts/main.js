@@ -40,7 +40,7 @@ var ProductCatalog = React.createClass({
 						<tbody>							
 							{keys.map(function(key){
 								return (
-									[<tr><td colSpan={3}>{key}</td></tr>].concat(comps[key])
+									[<tr><td colSpan={3} style={{textTransform: "uppercase"}}>{key}</td></tr>].concat(comps[key])
 								);
 							})}					
 						</tbody>
