@@ -30,6 +30,7 @@ var ProductCatalog = React.createClass({
 				</ButtonGroup>				
 				<div className="row">
 					<Table striped bordered condensed hover>
+						{/*
 						<thead>
 							<tr>
 								<th>Image</th>
@@ -37,6 +38,7 @@ var ProductCatalog = React.createClass({
 								<th>Description</th>
 							</tr>
 						</thead>
+						*/}
 						<tbody>							
 							{keys.map(function(key){
 								return (
