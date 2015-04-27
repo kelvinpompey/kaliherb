@@ -84,7 +84,7 @@ var KaliherbApp = React.createClass({
 		var DropdownButton = ReactBootstrap.DropdownButton; 
 		return (
 			  <div>
-				  <Navbar brand='Kaliherb' inverse toggleNavKey={0} id="navbar">			  	
+				  <Navbar brand='Kaliherb' inverse fixedTop toggleNavKey={0} id="navbar">			  	
 				    <Nav right eventKey={0}> {/* This is the eventKey referenced */}
 				      <NavItem eventKey={1} href='#'>Link</NavItem>
 				      <NavItem eventKey={2} href='#'>Link</NavItem>
