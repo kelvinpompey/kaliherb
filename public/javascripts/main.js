@@ -20,7 +20,7 @@ var ProductCatalog = React.createClass({
 							<span className="price-line"><span className="price">${product.prices.quarter}</span> 1/4</span>
 							<span className="price-line"><span className="price">${product.prices.half}</span> 1/2</span>
 							<span className="price-line"><span className="price">${product.prices.ounce}</span> oz</span>
-							<h2>{product.title}</h2>
+							<h2 className="title">{product.title}</h2>
 							<div>{product.description}</div>
 						</td>						
 					</tr>
