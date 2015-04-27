@@ -16,6 +16,12 @@ a {
   color: white;
 }
 
-.price {
+.price-line {
 	margin-right: 10px; 
+}
+
+.price {
+	color: orange;
+	font-weight: bold; 
+	weight: bold;
 }

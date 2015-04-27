@@ -15,10 +15,11 @@ var ProductCatalog = React.createClass({
 					<tr key={index}>
 						<td><img src={product.image} width={100} /></td>
 						<td>
-							<span className="price">${product.prices.gram} g</span>
-							<span className="price">${product.prices.eighth} 1/8</span>
-							<span className="price">${product.prices.quarter} 1/4</span>
-							<span className="price">${product.prices.half} 1/2</span>
+							<span className="price-line"><span className="price">${product.prices.gram}</span> g</span>
+							<span className="price-line"><span className="price">${product.prices.eighth}</span> 1/8</span>
+							<span className="price-line"><span className="price">${product.prices.quarter}</span> 1/4</span>
+							<span className="price-line"><span className="price">${product.prices.half}</span> 1/2</span>
+							<span className="price-line"><span className="price">${product.prices.ounce}</span> oz</span>
 							<h2>{product.title}</h2>
 							<div>{product.description}</div>
 						</td>						
