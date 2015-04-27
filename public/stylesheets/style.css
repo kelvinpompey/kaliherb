@@ -15,3 +15,7 @@ a {
 .navbar-inverse .navbar-brand {
   color: white;
 }
+
+.price {
+	margin-right: 10px; 
+}
