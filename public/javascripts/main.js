@@ -30,11 +30,6 @@ var ProductCatalog = React.createClass({
 
 		return (
 			<div className="container">
-				<h1>Product Catalog</h1>
-				<ButtonGroup>
-					<Button>List</Button>
-					<Button>Grid</Button>					
-				</ButtonGroup>				
 				<div className="row">
 					<Table striped bordered condensed hover>
 						{/*
@@ -77,11 +72,26 @@ var KaliherbApp = React.createClass({
 		var DropdownButton = ReactBootstrap.DropdownButton; 
 		return (
 			  <div>
-				  <Navbar brand='Kaliherb' inverse fixedTop toggleNavKey={0} id="navbar">			  	
-				    <Nav right eventKey={0}> {/* This is the eventKey referenced */}
-				      <NavItem eventKey={1} href='#'>Link</NavItem>
+				  <Navbar brand='' inverse fixedTop toggleNavKey={0} id="navbar">	
+				    <Nav eventKey={1}> {/* This is the eventKey referenced */}
+				      <NavItem>
+				      <img id="logo" src="/images/logo.jpg" />
+				      </NavItem>				      	
 				      <NavItem eventKey={2} href='#'>Link</NavItem>
-				      <DropdownButton eventKey={3} title='Dropdown'>
+				      <NavItem eventKey={3} href='#'>Link</NavItem>
+				      <DropdownButton eventKey={4} title='Dropdown'>
+				        <MenuItem eventKey='1'>Action</MenuItem>
+				        <MenuItem eventKey='2'>Another action</MenuItem>
+				        <MenuItem eventKey='3'>Something else here</MenuItem>
+				        <MenuItem divider />
+				        <MenuItem eventKey='4'>Separated link</MenuItem>
+				      </DropdownButton>
+				    </Nav>
+
+				    <Nav right eventKey={1}> {/* This is the eventKey referenced */}				      	
+				      <NavItem eventKey={2} href='#'>Link</NavItem>
+				      <NavItem eventKey={3} href='#'>Link</NavItem>
+				      <DropdownButton eventKey={4} title='Dropdown'>
 				        <MenuItem eventKey='1'>Action</MenuItem>
 				        <MenuItem eventKey='2'>Another action</MenuItem>
 				        <MenuItem eventKey='3'>Something else here</MenuItem>

@@ -1,6 +1,6 @@
 body {
   /*padding: 50px;*/ 
-  margin-top: 50px;
+  margin-top: 80px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -28,4 +28,8 @@ a {
 
 .title {
 	color: purple;
+}
+
+#logo {
+  width: 50px;
 }
