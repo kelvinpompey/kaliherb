@@ -9,12 +9,18 @@ a {
 }
 
 #navbar {
-	background-color: green;
+	background-color: deeppink;
 }
 
 .navbar-inverse .navbar-brand {
   color: white;
 }
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+  font-size: 20px;
+}
+
 
 .price-line {
 	margin-right: 10px; 
@@ -27,9 +33,13 @@ a {
 }
 
 .title {
-	color: purple;
+	color: blueviolet;
 }
 
 #logo {
   width: 50px;
+}
+
+.margin10 {
+	margin-top: 10px;
 }

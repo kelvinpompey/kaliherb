@@ -77,27 +77,14 @@ var KaliherbApp = React.createClass({
 				      <NavItem>
 				      <img id="logo" src="/images/logo.jpg" />
 				      </NavItem>				      	
-				      <NavItem eventKey={2} href='#'>Link</NavItem>
-				      <NavItem eventKey={3} href='#'>Link</NavItem>
-				      <DropdownButton eventKey={4} title='Dropdown'>
-				        <MenuItem eventKey='1'>Action</MenuItem>
-				        <MenuItem eventKey='2'>Another action</MenuItem>
-				        <MenuItem eventKey='3'>Something else here</MenuItem>
-				        <MenuItem divider />
-				        <MenuItem eventKey='4'>Separated link</MenuItem>
-				      </DropdownButton>
+				      <NavItem eventKey={2} href='#' className="margin10">(818) 268-4083</NavItem>
 				    </Nav>
 
 				    <Nav right eventKey={1}> {/* This is the eventKey referenced */}				      	
-				      <NavItem eventKey={2} href='#'>Link</NavItem>
-				      <NavItem eventKey={3} href='#'>Link</NavItem>
-				      <DropdownButton eventKey={4} title='Dropdown'>
-				        <MenuItem eventKey='1'>Action</MenuItem>
-				        <MenuItem eventKey='2'>Another action</MenuItem>
-				        <MenuItem eventKey='3'>Something else here</MenuItem>
-				        <MenuItem divider />
-				        <MenuItem eventKey='4'>Separated link</MenuItem>
-				      </DropdownButton>
+				      <NavItem eventKey={2} href='#' className="margin10">About</NavItem>
+				      <NavItem eventKey={3} href='#' className="margin10">Contact</NavItem>
+				      <NavItem eventKey={3} href='#' className="margin10">Register</NavItem>
+
 				    </Nav>
 				  </Navbar>
 				  <ProductCatalog products={products} />
