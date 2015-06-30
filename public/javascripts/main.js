@@ -71,8 +71,8 @@ var KaliherbApp = React.createClass({
 		var NavItem = ReactBootstrap.NavItem;
 		var DropdownButton = ReactBootstrap.DropdownButton; 
 		return (
-			  <div>
-				  <Navbar brand='' inverse fixedTop toggleNavKey={0} id="navbar">	
+			  <div>			  	  
+				  <Navbar brand='' inverse fixedTop toggleNavKey={0} id="navbar">
 				    <Nav eventKey={1}> {/* This is the eventKey referenced */}
 				      <NavItem>
 				      <img id="logo" src="/images/logo2.jpg" />
