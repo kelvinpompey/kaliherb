@@ -29,7 +29,7 @@ var ProductCatalog = React.createClass({
 		}
 
 		return (
-			<div className="container">
+			<div className="container" style={{backgroundColor: "white"}}>
 				<div className="row">
 					<Table striped bordered condensed hover>
 						{/*
@@ -75,7 +75,7 @@ var KaliherbApp = React.createClass({
 				  <Navbar brand='' inverse fixedTop toggleNavKey={0} id="navbar">	
 				    <Nav eventKey={1}> {/* This is the eventKey referenced */}
 				      <NavItem>
-				      <img id="logo" src="/images/logo.jpg" />
+				      <img id="logo" src="/images/logo2.jpg" />
 				      </NavItem>				      	
 				      <NavItem eventKey={2} href='#' className="margin10">(818) 268-4083</NavItem>
 				    </Nav>
