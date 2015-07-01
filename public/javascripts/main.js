@@ -70,24 +70,26 @@ var KaliherbApp = React.createClass({
 		var MenuItem = ReactBootstrap.MenuItem; 
 		var NavItem = ReactBootstrap.NavItem;
 		var DropdownButton = ReactBootstrap.DropdownButton; 
+		var Grid = ReactBootstrap.Grid; 
+		var Col = ReactBootstrap.Col;
+		var Row = ReactBootstrap.Row; 
 		return (
-			  <div>			  	  
-				  <Navbar brand='' inverse fixedTop toggleNavKey={0} id="navbar">
-				    <Nav eventKey={1}> {/* This is the eventKey referenced */}
-				      <NavItem>
-				      <img id="logo" src="/images/logo2.jpg" />
-				      </NavItem>				      	
-				      <NavItem eventKey={2} href='#' className="margin10">(818) 268-4083</NavItem>
-				    </Nav>
-
-				    <Nav right eventKey={1}> {/* This is the eventKey referenced */}				      	
-				      <NavItem eventKey={2} href='#' className="margin10">About</NavItem>
-				      <NavItem eventKey={3} href='#' className="margin10">Contact</NavItem>
-				      <NavItem eventKey={3} href='#' className="margin10">Register</NavItem>
-
-				    </Nav>
-				  </Navbar>
-				  <ProductCatalog products={products} />
+			  <div>		
+						<Row className="striped" style={{transform: "rotate(180deg)"}}></Row>	  	  
+			  			<Row id="header">
+			  				<Col sm={4}><img src="images/logo2.jpg" id="logo"/></Col>
+			  				<Col sm={8} className="contact-line">
+			  					PH: (818) 268-4083 OPEN 10AM - 12AM DAILY 7 DAYS A WEEK
+			  					<Row className="header-menu">
+			  						<Col md={3} className="header-menu-item">About</Col>
+			  						<Col md={3} className="header-menu-item">Contact Us</Col>
+			  						<Col md={3} className="header-menu-item">Register</Col>
+			  					</Row>
+			  				</Col>
+			  			</Row>
+			  			<Row className="striped"></Row>
+			  			<Row style={{marginBottom: "20px"}}></Row>
+				  	<ProductCatalog products={products} />
 			  </div>
 			  
 			);
