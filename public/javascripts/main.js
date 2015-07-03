@@ -4,6 +4,8 @@ var ProductCatalog = React.createClass({
 		var Table = ReactBootstrap.Table; 
 		var ButtonGroup = ReactBootstrap.ButtonGroup; 
 		var Button = ReactBootstrap.Button; 
+		var Row = ReactBootstrap.Row; 
+		var Col = ReactBootstrap.Col; 
 
 		var keys = []; 
 		var comps = {}; 
@@ -12,16 +14,22 @@ var ProductCatalog = React.createClass({
 			keys.push(key); 
 			comps[key] = this.props.products[key].map(function(product, index){
 				return (				
-					<tr key={index}>
-						<td><img src={product.image} width={100} /></td>
+					<tr key={index} className="dashed-border">						
 						<td>
-							<span className="price-line"><span className="price">${product.prices.gram}</span> g</span>
-							<span className="price-line"><span className="price">${product.prices.eighth}</span> 1/8</span>
-							<span className="price-line"><span className="price">${product.prices.quarter}</span> 1/4</span>
-							<span className="price-line"><span className="price">${product.prices.half}</span> 1/2</span>
-							<span className="price-line"><span className="price">${product.prices.ounce}</span> oz</span>
-							<h2 className="title">{product.title}</h2>
-							<div>{product.description}</div>
+							<Row>
+								<Col md={2}><span className="price-line">{product.title}</span></Col>
+								<Col>
+									<span className="price-line"><span className="price">${product.prices.gram}</span> g</span>
+									<span className="price-line"><span className="price">${product.prices.eighth}</span> 1/8</span>
+									<span className="price-line"><span className="price">${product.prices.quarter}</span> 1/4</span>
+									<span className="price-line"><span className="price">${product.prices.half}</span> 1/2</span>
+									<span className="price-line"><span className="price">${product.prices.ounce}</span> oz</span>								
+								</Col>
+							</Row>
+							<Row>
+								<Col md={2}><img src={product.image} width={100} /></Col>
+								<Col><div>{product.description}</div></Col>
+							</Row>							
 						</td>						
 					</tr>
 				); 
@@ -30,8 +38,9 @@ var ProductCatalog = React.createClass({
 
 		return (
 			<div className="container" style={{backgroundColor: "white"}}>
-				<div className="row">
-					<Table striped bordered condensed hover>
+				<div className="row" style={{padding: "20px"}}>
+					<h1>Menu</h1>
+					<Table hover>
 						{/*
 						<thead>
 							<tr>
@@ -44,7 +53,7 @@ var ProductCatalog = React.createClass({
 						<tbody>							
 							{keys.map(function(key){
 								return (
-									[<tr><td colSpan={3} style={{textTransform: "uppercase", fontWeight: "bold"}}>{key}</td></tr>].concat(comps[key])
+									[<tr className="category"><td colSpan={3}>{key}</td></tr>].concat(comps[key])
 								);
 							})}					
 						</tbody>
@@ -77,7 +86,7 @@ var KaliherbApp = React.createClass({
 			  <div>		
 						<Row className="striped" style={{transform: "rotate(180deg)"}}></Row>	  	  
 			  			<Row id="header">
-			  				<Col sm={4}><img src="images/logo2.jpg" id="logo"/></Col>
+			  				<Col sm={4}><img src="images/logo2.jpg" className="logo"/></Col>
 			  				<Col sm={8} className="contact-line">
 			  					PH: (818) 268-4083 OPEN 10AM - 12AM DAILY 7 DAYS A WEEK
 			  					<Row className="header-menu">
@@ -89,7 +98,27 @@ var KaliherbApp = React.createClass({
 			  			</Row>
 			  			<Row className="striped"></Row>
 			  			<Row style={{marginBottom: "20px"}}></Row>
-				  	<ProductCatalog products={products} />
+
+				  		<ProductCatalog products={products} />
+
+			  			<Row style={{marginTop: "20px"}}></Row>
+						<Row className="striped" style={{transform: "rotate(180deg)"}}></Row>	  	  
+			  			<Row id="header">
+			  				<Col sm={3}><img src="images/logo2.jpg" className="logo"/></Col>
+			  				<Col sm={7} className="footer-text">
+			  					WE SERVICE THE ENTIRE SAN FERNANDO VALLEY & SURROUNDING AREAS
+			  					<Row>
+			  						Calabasas |Canoga Park |Chatsworth Granada Hills Reseda |North Hollywood | Northridge 
+			  					</Row>
+			  					<Row>
+			  						Pacoima Porter Ranch | Santa Clarita |Sherman Oaks | Studio City | Sylmar | Tarzana Van Nuys |Winnetka | Woodland Hills 
+			  					</Row>
+			  					<Row>
+									CONTACT US AT (818) 268-4083 | KALIHERB@GMAIL.COM
+			  					</Row>
+			  				</Col>
+			  			</Row>
+			  			<Row className="striped"></Row>				  		
 			  </div>
 			  
 			);

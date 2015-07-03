@@ -34,7 +34,7 @@ a {
 }
 
 .price {
-	color: orange;
+	/*color: orange; */ 
 	font-weight: bold; 
 	weight: bold;
 }
@@ -43,11 +43,18 @@ a {
 	color: blueviolet;
 }
 
+.category {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ACAC31;
+	border-top: solid 5px #990000;
+}
+
 .contact-line {
 	font-weight: bold;
 }
 
-#logo {
+.logo {
   width: 150px;
 }
 
@@ -68,9 +75,19 @@ a {
 .header-menu-item {
 	border-left-style: solid; 
 	border-left-width: 5px; 
-	border-left-color: green; 
+	border-left-color: #ACAC31; 
 }
 
 .margin10 {
 	margin-top: 10px;
+}
+
+.dashed-border {
+	border-bottom-style: dashed;
+	border-bottom-color: yellow;
+	padding-bottom: 10px; 
+}
+
+.footer-text {
+	text-align: center; 
 }
