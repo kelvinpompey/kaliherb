@@ -17,13 +17,13 @@ var ProductCatalog = React.createClass({
 					<tr key={index} className="dashed-border">						
 						<td>
 							<Row>
-								<Col md={2}><span className="price-line">{product.title}</span></Col>
+								<Col md={2}><span className="product-title">{product.title}</span></Col>
 								<Col>
-									<span className="price-line"><span className="price">${product.prices.gram}</span> g</span>
-									<span className="price-line"><span className="price">${product.prices.eighth}</span> 1/8</span>
-									<span className="price-line"><span className="price">${product.prices.quarter}</span> 1/4</span>
-									<span className="price-line"><span className="price">${product.prices.half}</span> 1/2</span>
-									<span className="price-line"><span className="price">${product.prices.ounce}</span> oz</span>								
+									<div className="price-line"><span className="">${product.prices.gram}</span> g</div>
+									<div className="price-line2"><span className="">${product.prices.eighth}</span> 1/8</div>
+									<div className="price-line"><span className="">${product.prices.quarter}</span> 1/4</div>
+									<div className="price-line2"><span className="">${product.prices.half}</span> 1/2</div>
+									<div className="price-line"><span className="">${product.prices.ounce}</span> oz</div>								
 								</Col>
 							</Row>
 							<Row>
@@ -39,7 +39,7 @@ var ProductCatalog = React.createClass({
 		return (
 			<div className="container" style={{backgroundColor: "white"}}>
 				<div className="row" style={{padding: "20px"}}>
-					<h1>Menu</h1>
+					<h1 style={{textAlign: "center"}}>Menu</h1>
 					<Table hover>
 						{/*
 						<thead>

@@ -27,8 +27,18 @@ a {
 }
 
 .price-line {
-	margin-right: 10px; 
+	width: 100px; 
+	float: left; 
 	font-size: 20px;
+	background-color: #C5E5A4; #FBFCC6
+
+}
+
+.price-line2 {
+	width: 100px; 
+	float: left; 
+	font-size: 20px;
+	background-color: #FBFCC6
 
 }
 
@@ -36,6 +46,10 @@ a {
 	/*color: orange; */ 
 	font-weight: bold; 
 	weight: bold;
+}
+
+.product-title {
+	font-weight: bold;
 }
 
 .title {
