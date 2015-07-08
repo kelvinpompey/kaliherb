@@ -19,11 +19,11 @@ var ProductCatalog = React.createClass({
 							<Row>
 								<Col md={2}><span className="product-title">{product.title}</span></Col>
 								<Col>
-									<div className="price-line"><span className="">${product.prices.gram}</span> g</div>
-									<div className="price-line2"><span className="">${product.prices.eighth}</span> 1/8</div>
-									<div className="price-line"><span className="">${product.prices.quarter}</span> 1/4</div>
-									<div className="price-line2"><span className="">${product.prices.half}</span> 1/2</div>
-									<div className="price-line"><span className="">${product.prices.ounce}</span> oz</div>								
+									<div className="price-line"><span className="">{product.prices.gram}</span> gr</div>
+									<div className="price-line2"><span className="">{product.prices.eighth}</span> ⅛</div>
+									<div className="price-line"><span className="">{product.prices.quarter}</span> ¼</div>
+									<div className="price-line2"><span className="">{product.prices.half}</span> ½</div>
+									<div className="price-line"><span className="">{product.prices.ounce}</span> oz</div>								
 								</Col>
 							</Row>
 							<Row>

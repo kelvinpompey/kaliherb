@@ -29,15 +29,17 @@ a {
 .price-line {
 	width: 100px; 
 	float: left; 
-	font-size: 20px;
-	background-color: #C5E5A4; #FBFCC6
+	font-size: 14px;
+	font-weight: bold; 
+	background-color: #C5E5A4;
 
 }
 
 .price-line2 {
 	width: 100px; 
 	float: left; 
-	font-size: 20px;
+	font-size: 14px;
+	font-weight: bold; 
 	background-color: #FBFCC6
 
 }
@@ -60,7 +62,7 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #ACAC31;
-	border-top: solid 5px #990000;
+	border-top: solid 5px #000000;
 }
 
 .contact-line {
