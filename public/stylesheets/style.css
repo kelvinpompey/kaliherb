@@ -31,6 +31,7 @@ a {
 	float: left; 
 	font-size: 14px;
 	font-weight: bold; 
+	padding: 10px;
 	background-color: #C5E5A4;
 
 }
@@ -40,6 +41,7 @@ a {
 	float: left; 
 	font-size: 14px;
 	font-weight: bold; 
+	padding: 10px;
 	background-color: #FBFCC6
 
 }
@@ -73,10 +75,12 @@ a {
   width: 150px;
   border: solid 1px #666;
   position: relative;
+  margin-left: 35px; 
   top: -70px;
 }
 
 .logo-bottom {
+  margin-left: 35px; 
   width: 150px;
   border: solid 1px #666;	
 }
