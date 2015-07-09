@@ -3,9 +3,28 @@ var AboutPage = React.createClass({
 		var Grid = ReactBootstrap.Grid; 
 		var Row = ReactBootstrap.Row; 
 		return (
-			<Grid>
-				<Row>
-					<h1>About Us</h1>
+			<Grid id="about">
+				<Row style={{padding: "20px"}}>
+					<h1 className="center underline">About Us</h1>
+					<h2 className="green-text">Kaliherb</h2>
+					<div className="center">KaliHerb Collective is a non-profit mutual benefit Medical Cannabis collective, providing legal & discreet
+marijuana/cannabis delivery in the San Fernando Valley. We are a member owned and operated collective,
+operating in compliance with California Health and safety Code Section 11362 and CA Attorney General's
+Guidelines for Medical Cannabis</div>
+					<br />
+
+					<div className="center">KaliHerb Collective was founded on the commitment to provide the best in medical marijuana services.
+integrity continues to be the mission and objective of our organization. Along with this guiding principle, are a
+commitment to be honest, fair, courteous, and respectful of all patients. This foundation for KaliHerb
+Collective rests on the basic truth of the golden rule philosophy and its applicability to our collective members,
+associates and employees.</div>
+					<br />
+					<div className="center bold">Hours of Operation:</div>
+					<div className="center bold">Mon-Fri 10:00am - 12:00am</div>
+					<div className="center bold">Sat 10:00am - 12:00am</div>
+					<div className="center bold">Sun 10:00am - 12:00am</div>
+					<div className="center bold">Phone - 818-268-4083 | Email - kaliherbla@gmail.com</div>
+
 				</Row>
 			</Grid>
 		); 

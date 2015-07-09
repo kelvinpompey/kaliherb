@@ -143,3 +143,21 @@ a {
 .footer-text {
 	text-align: center; 
 }
+
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold; 
+}
+
+.underline {
+	border-bottom-style: solid; 
+	border-bottom-width: 2px; 
+	border-bottom-color: black;
+}
+
+.green-text {
+	color: green;
+}
