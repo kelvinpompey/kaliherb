@@ -60,13 +60,13 @@ var KaliherbApp = React.createClass({
 		return (
 			  <div>		
 			  			<Row className="header-top">
-			  				<Col mdOffset={4} md={2} className="header-menu-item">About</Col>
+			  				<Col mdOffset={4} md={2} className="header-menu-item"><a href="/about">About</a></Col>
 			  				<Col md={2} className="header-menu-item">Contact Us</Col>
-			  				<Col md={2} className="header-menu-item">Register</Col>			  			
+			  				<Col md={2} className="header-menu-item"><a href="/register">Register</a></Col>			  			
 			  			</Row>
 
 			  			<Row className="header-bottom">
-							<Col sm={4} style={{height: "57px"}}><img src="images/logo2.jpg" className="logo"/></Col>
+							<Col sm={4} style={{height: "57px"}}><a href="/"><img src="images/logo2.jpg" className="logo"/></a></Col>
 			  				<Col md={8} className="contact-line">
 			  					PH: (818) 268-4083 OPEN 10AM - 12AM DAILY 7 DAYS A WEEK
 			  				</Col>			  			
