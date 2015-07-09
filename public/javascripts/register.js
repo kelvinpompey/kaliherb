@@ -8,7 +8,7 @@ var RegisterPage = React.createClass({
 				<Row style={{padding: "20px"}}>
 					<h1 className="center underline">Register</h1>
 					<h2 className="green-text">New Patient Verification</h2>
-					<div className="center">Pre-qualification for new patients is available. This form is secure and will provide all of your current
+					<div className="">Pre-qualification for new patients is available. This form is secure and will provide all of your current
 						information to our database allowing us to provide a quick verification upon your first delivery. Please follow the link below and fill out the information form required.</div>
 					<br />
     				<Button bsStyle='success' className="block-center">REGISTER</Button>
