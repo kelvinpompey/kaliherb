@@ -148,6 +148,13 @@ a {
 	text-align: center;
 }
 
+.block-center {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-bottom: 10px;
+}
+
 .bold {
 	font-weight: bold; 
 }
@@ -156,6 +163,7 @@ a {
 	border-bottom-style: solid; 
 	border-bottom-width: 2px; 
 	border-bottom-color: black;
+	padding-bottom: 10px; 
 }
 
 .green-text {
