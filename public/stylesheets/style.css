@@ -173,3 +173,28 @@ a:hover {
 .green-text {
 	color: green;
 }
+
+@media (max-width: 480px) {
+	body {
+		background-color: red; 
+	} 
+
+	.logo {
+	  width: 150px;
+	  border: solid 1px #666;
+	  position: relative;
+	  margin-left: 0px;
+	}
+
+
+	.header-menu-item {
+		margin-left: 200px; 
+		margin-top: 10px;
+		font-size: 20px; 
+	}	
+
+}
+
+
+
+
