@@ -191,7 +191,27 @@ a:hover {
 		margin-left: 200px; 
 		margin-top: 10px;
 		font-size: 20px; 
-	}	
+	}
+
+	.price-line {
+		width: 65px; 
+		float: left; 
+		font-size: 14px;
+		font-weight: bold; 
+		padding: 10px;
+		background-color: #C5E5A4;
+
+	}
+
+	.price-line2 {
+		width: 65px; 
+		float: left; 
+		font-size: 14px;
+		font-weight: bold; 
+		padding: 10px;
+		background-color: #FBFCC6
+
+	}
 
 }
 
