@@ -50,6 +50,7 @@ var KaliherbApp = React.createClass({
 			  				<Col sm={8} className="contact-line">
 			  					PH: (818) 268-4083 OPEN 10AM - 12AM DAILY 7 DAYS A WEEK
 			  					<Row className="header-menu">
+									<Col md={3} className="header-menu-item"><a href="/">Home</a></Col>
 			  						<Col md={3} className="header-menu-item"><a href="/about">About</a></Col>
 			  						<Col md={3} className="header-menu-item"><a href="">Contact Us</a></Col>
 			  						<Col md={3} className="header-menu-item"><a href="/register">Register</a></Col>
