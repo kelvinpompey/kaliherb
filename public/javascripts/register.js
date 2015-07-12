@@ -59,25 +59,26 @@ var KaliherbApp = React.createClass({
 		var Row = ReactBootstrap.Row; 
 		return (
 			  <div>		
-			  			<Row className="header-top">
-			  				<Col mdOffset={4} md={2} className="header-menu-item"><a href="/about">About</a></Col>
-			  				<Col md={2} className="header-menu-item">Contact Us</Col>
-			  				<Col md={2} className="header-menu-item"><a href="/register">Register</a></Col>			  			
-			  			</Row>
-
-			  			<Row className="header-bottom">
-							<Col sm={4} style={{height: "57px"}}><a href="/"><img src="images/logo2.jpg" className="logo"/></a></Col>
-			  				<Col md={8} className="contact-line">
+						<Row className="striped" style={{transform: "rotate(180deg)"}}></Row>	  	  
+			  			<Row id="header">
+			  				<Col sm={4}><a href="/"><img src="images/logo2.jpg" className="logo"/></a></Col>
+			  				<Col sm={8} className="contact-line">
 			  					PH: (818) 268-4083 OPEN 10AM - 12AM DAILY 7 DAYS A WEEK
-			  				</Col>			  			
+			  					<Row className="header-menu">
+			  						<Col md={3} className="header-menu-item"><a href="/about">About</a></Col>
+			  						<Col md={3} className="header-menu-item"><a href="#">Contact Us</a></Col>
+			  						<Col md={3} className="header-menu-item"><a href="/register">Register</a></Col>
+			  					</Row>
+			  				</Col>
 			  			</Row>
-			  			<Row style={{marginBottom: "1px"}}></Row>
+			  			<Row className="striped"></Row>
+			  			<Row style={{marginBottom: "20px"}}></Row>
 
 			  			<RegisterPage></RegisterPage>
 			  			<Row style={{marginTop: "20px"}}></Row>
-						<Row className="green-bar"></Row>	  	  
+						<Row className="striped" style={{transform: "rotate(180deg)"}}></Row>	  	  
 			  			<Row id="header">
-			  				<Col sm={3}><img src="images/logo2.jpg" className="logo-bottom"/></Col>
+			  				<Col sm={3}><img src="images/logo2.jpg" className="logo"/></Col>
 			  				<Col sm={7} className="footer-text">
 			  					WE SERVICE THE ENTIRE SAN FERNANDO VALLEY & SURROUNDING AREAS
 			  					<Row>
@@ -91,7 +92,7 @@ var KaliherbApp = React.createClass({
 			  					</Row>
 			  				</Col>
 			  			</Row>
-			  			<Row className="dashed-border2"></Row>				  		
+			  			<Row className="striped"></Row>					  		
 			  </div>
 			  
 			);

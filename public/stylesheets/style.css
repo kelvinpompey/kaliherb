@@ -1,16 +1,24 @@
+/*body {
+  padding: 50px;
+  margin-top: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+}*/ 
+
 body {
   /*padding: 50px;*/ 
   margin-top: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: #666633;
+  background-image: url('../images/pattern3.png'); 
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 a:hover {
-	color: white;
+	color: black;
 }
 
 #navbar {
@@ -77,10 +85,7 @@ a:hover {
 
 .logo {
   width: 150px;
-  border: solid 1px #666;
-  position: relative;
-  margin-left: 35px; 
-  top: -70px;
+  border: solid 1px black;
 }
 
 .logo-bottom {
@@ -122,7 +127,9 @@ a:hover {
 }
 
 .header-menu-item {
-
+	border-left-style: solid; 
+	border-left-width: 5px; 
+	border-left-color: #ACAC31; 
 }
 
 .margin10 {
