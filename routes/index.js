@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
-var db = mongojs('kalidb', ['products']);
+var db = mongojs('mongodb://kaliuser:letmein2010@ds059672.mongolab.com:59672/kalidb', ['products']);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
