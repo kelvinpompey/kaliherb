@@ -18,7 +18,7 @@ router.get('/register', function(req, res, next) {
 
 router.get('/products', function(req, res, next){
 	db.products.find(function(err, docs){
-		res.send(docs); 
+		res.json(docs); 
 	}); 
 }); 
 

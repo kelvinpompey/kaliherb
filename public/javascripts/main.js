@@ -126,4 +126,9 @@ var KaliherbApp = React.createClass({
 	}
 });
 
-React.render(<KaliherbApp />, document.getElementById('main')); 
+
+fetchProducts(function(){
+	//self.setProps({products: products}); 
+	React.render(<KaliherbApp />, document.getElementById('main')); 
+}); 
+
